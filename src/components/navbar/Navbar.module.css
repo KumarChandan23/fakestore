@@ -28,3 +28,8 @@
     padding: 10px;
     background-color: #cbcbf0;
 }
+@media (max-width:768px) {
+    .logout, .signup, .login{
+        display: none;
+    }
+}

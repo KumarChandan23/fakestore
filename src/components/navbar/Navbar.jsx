@@ -16,13 +16,12 @@ const Navbar = () => {
       <figure><h1><FaShopify /> Fashion</h1></figure>
       <ul>
         <li><NavLink  to="/" className={({isActive})=> isActive? style.active : ""}>Home</NavLink></li>
-        <li><NavLink  to="/allproducts" className={({isActive})=> isActive? style.active : ""}>All Products</NavLink></li>
         {(user_id) ? (
-          <li><NavLink onClick={logout} className={({isActive})=> isActive? style.active : ""}>Logout</NavLink></li>
+          <li><NavLink onClick={logout} className={({isActive})=> `${style.logout} ${isActive? style.active : ""}`}>Logout</NavLink></li>
         ) : (
           <Fragment>
-            <li><NavLink to="/login"  className={({isActive})=> isActive? style.active : ""}>Login</NavLink></li>
-            <li><NavLink to="/signup" className={({isActive})=> isActive? style.active : ""}>SignUp</NavLink></li>
+            <li><NavLink to="/login"  className={({isActive})=> `${style.login} ${isActive? style.active : "" }`}>Login</NavLink></li>
+            <li><NavLink to="/signup" className={({isActive})=> `${style.signup} ${isActive? style.active : ""}`}>SignUp</NavLink></li>
           </Fragment>
         )
         }

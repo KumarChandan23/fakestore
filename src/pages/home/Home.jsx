@@ -1,4 +1,5 @@
 import React from 'react'
+import AllProducts from '../products/all_products/AllProducts';
 
 const Home = () => {
   const userEmail = sessionStorage.getItem("email");
@@ -6,7 +7,7 @@ const Home = () => {
   console.log(userEmail)
   return (
     <div>
-      <h1>This is Home</h1>
+      <AllProducts />
     </div>
   )
 }

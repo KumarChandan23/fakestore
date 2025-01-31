@@ -1,0 +1,91 @@
+#signup_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.signup_form_container{
+    border:2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    background-color:cadetblue;
+}
+.signup_form_container > div {
+    margin: 10px 0 5px 0;
+}
+.signup_form_container > div > input{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    color: orange;
+    font-size: 18px;
+}
+
+.signup_form_container > div > label{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px  0;
+    text-transform:capitalize;
+}
+.gender_container{
+    padding: 5px 0;
+}
+.gender_container label{
+   font-size: 19px;
+   margin: 0 15px 0 5px;
+   text-transform: capitalize;
+}
+.gender_container input[type="radio"]{
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.gender_container input[type="radio"]:checked{
+    background-color: rgb(247, 152, 0);
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.button_container button{
+    width: 140px;
+    height: 35px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(244, 173, 43);
+        color: #fff;
+    }
+}
+#signup_container .login_link_container p{
+font-size: 20px;
+}
+#signup_container .login_link_container a{
+font-size: 25px;
+text-decoration: underline 2px wavy #fff;
+text-underline-offset: 8px;
+margin: 0 10px;
+text-transform: capitalize;
+padding: 2px 5px;
+&:hover{
+    color: bisque;
+    text-decoration: none;
+    outline:2px solid bisque;
+    border-radius: 8px;
+    padding: 2px 5px;
+}
+}

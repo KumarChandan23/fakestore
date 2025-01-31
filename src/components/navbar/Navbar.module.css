@@ -1,0 +1,30 @@
+
+#navbar{
+    height: 70px;
+    width: 100%;
+    background-color: royalblue;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+#navbar ul{
+    display: flex;
+    gap:20px;
+    font-size: 20px;
+}
+#navbar ul li{
+    padding: 10px;
+    /* width: 100%; */
+    &:hover{
+    color: bisque;
+    }
+}
+.active{
+    color: royalblue;
+    border-radius: 8px;
+    outline:1.7px solid bisque;
+    padding: 10px;
+    background-color: #cbcbf0;
+}

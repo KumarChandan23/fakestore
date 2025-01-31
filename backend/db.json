@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "f68e",
+      "username": "kumar",
+      "email": "kumar@gmail.com",
+      "password": "kumar@23134",
+      "gender": "male",
+      "mobile": "2348908420",
+      "dob": "2025-01-15"
+    },
+    {
+      "id": "07b6",
+      "username": "jhuman",
+      "email": "jhumani@gmail.com",
+      "password": "jhuman@1234",
+      "gender": "male",
+      "mobile": "4783219378",
+      "dob": "2025-01-18"
+    }
+  ]
+}

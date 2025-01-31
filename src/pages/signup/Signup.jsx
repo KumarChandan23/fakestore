@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from './SignUp.module.css';
+import style from './Signup.module.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 const Signup = () => {

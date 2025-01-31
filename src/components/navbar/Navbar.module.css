@@ -9,6 +9,16 @@
     align-items: center;
     padding: 5px 20px;
 }
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    /* background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 8px 20px; 
+  }
 #navbar ul{
     display: flex;
     gap:20px;
@@ -29,7 +39,7 @@
     background-color: #cbcbf0;
 }
 @media (max-width:768px) {
-    .logout, .signup, .login{
+    .nav_item_container{
         display: none;
     }
 }

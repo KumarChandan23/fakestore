@@ -29,11 +29,11 @@ const Navbar = () => {
     <nav id={style.navbar} className={isScrolled ? style.fixed : ""}>
       <figure>
         <Link to="/">
-        <h1><FaShopify /> Fashion</h1>
+        <h1><FaShopify /> Electronics</h1>
         </Link>
         </figure>
       <ul className={style.nav_item_container}>
-        <li><NavLink to="/" className={({ isActive }) => isActive ? style.active : ""}>Home</NavLink></li>
+        <li><NavLink to="/" className={({ isActive }) => `${style.home} ${isActive ? style.active : ""}`}>Home</NavLink></li>
         {(user_id) ? (
           <li><NavLink onClick={logout} className={({ isActive }) => `${style.logout} ${isActive ? style.active : ""}`}>Logout</NavLink></li>
         ) : (

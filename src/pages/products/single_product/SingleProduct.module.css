@@ -70,6 +70,21 @@
   margin-top: 1rem;
 }
 
+.poruct_order_button{
+  width: 200px;
+  background-color: orange;
+  height: 50px;
+  border:none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 23px;
+  color: #fff;
+  cursor: pointer;
+  &:hover{
+    background-color: rgb(228, 144, 42);
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .product_container {

@@ -83,9 +83,8 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .product_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+
   }
   
   .product_information {
@@ -101,7 +100,11 @@
   .product_information p {
     font-size: 0.95rem;
   }
-  .product_discount, .product_description{
-    display: block;
+  .product_model, .product_category{
+    /* color: red; */
+    font-size: 18px !important;
+    margin-inline-start: 0 !important;
+    margin-top: 0 !important;
+    font-weight: 500;
   }
 }
